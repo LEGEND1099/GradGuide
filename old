@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AdmitPredict</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Smooth fade-in animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Hover effect for cards */
+        .card:hover {
+            transform: scale(1.05);
+            transition: 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">AdmitPredict</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gre-prep.html">GRE Prep</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ielts-practice.html">IELTS Practice</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-primary text-white text-center py-5 fade-in">
+        <h1>Welcome to AdmitPredict</h1>
+        <p>Your ultimate guide for studying abroad</p>
+    </header>
+
+    <!-- Profile Carousel -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4 fade-in">Learn from Others' Journeys</h2>
+        <div id="profileCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Profile 1 -->
+                <div class="carousel-item active">
+                    <div class="text-center">
+                        <img src="images/pallavi.jpg" class="rounded-circle" width="150" height="150" alt="Pallavi Mishra">
+                        <h3>Pallavi Mishra</h3>
+                        <p>BTech CS | Data Scientist | Australia</p>
+                        <a href="about.html" class="btn btn-primary">View Journey</a>
+                    </div>
+                </div>
+                <!-- Profile 2 -->
+                <div class="carousel-item">
+                    <div class="text-center">
+                        <img src="images/mansi.jpg" class="rounded-circle" width="150" height="150" alt="Mansi Raturi">
+                        <h3>Mansi Raturi</h3>
+                        <p>MS in Data Science | Boston</p>
+                        <a href="about-mansi.html" class="btn btn-primary">View Journey</a>
+                    </div>
+                </div>
+                <!-- Profile 3 -->
+                <div class="carousel-item">
+                    <div class="text-center">
+                        <img src="images/rishin.jpg" class="rounded-circle" width="150" height="150" alt="Rishin Pandit">
+                        <h3>Rishin Pandit</h3>
+                        <p>MS in AI | Canada</p>
+                        <a href="about-rishin.html" class="btn btn-primary">View Journey</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#profileCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#profileCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-4 fade-in">
+                <div class="card p-3 text-center">
+                    <a href="https://unidecisiontracker.streamlit.app/" class="btn btn-primary">
+                        <h3>Expert Analysis</h3>
+                        <p>Analyzing your university admit.</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 fade-in">
+                <div class="card p-3 text-center">
+                    <a href="gre-prep.html" class="btn btn-primary">
+                        <h3>GRE Prep Plan</h3>
+                        <p>Follow our structured 2-month study plan.</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 fade-in">
+                <div class="card p-3 text-center">
+                    <a href="ielts-practice.html" class="btn btn-primary">
+                        <h3>IELTS Practice</h3>
+                        <p>High-quality IELTS tests and resources.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        &copy; 2025 AdmitPredict. All Rights Reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AdmitPredict</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Custom Styling */
+        body {
+            background: linear-gradient(135deg, #2E3192, #1BFFFF);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        .navbar {
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1.5s ease-in-out forwards;
+        }
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .carousel img {
+            border: 5px solid white;
+            margin-bottom: 15px;
+        }
+        .btn {
+            background: #ff6f61;
+            border: none;
+            transition: 0.3s ease;
+        }
+        .btn:hover {
+            background: #ff4757;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">AdmitPredict</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gre-prep.html">GRE Prep</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ielts-practice.html">IELTS Practice</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">My Journey</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1 class="fade-in">Welcome to AdmitPredict</h1>
+        <p class="fade-in">Your ultimate guide for studying abroad</p>
+    </header>
+
+    <!-- Profile Carousel -->
+    <section class="container my-5">
+        <h3 class="text-center mb-4 fade-in">Learn from Others' Journeys</h3>
+        <div id="profileCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Profile 1 -->
+                <div class="carousel-item active">
+                    <div class="text-center">
+                        <!-- <img src="images/pallavi.jpg" class="rounded-circle" width="150" height="150" alt="Pallavi Mishra"> -->
+                        <h3>Pallavi Mishra</h3>
+                        <p>BTech CS | Data Scientist | Australia</p>
+                        <a href="about.html" class="btn btn-primary">View Journey</a>
+                    </div>
+                </div>
+                <!-- Profile 2 -->
+                <div class="carousel-item">
+                    <div class="text-center">
+                        <!-- <img src="images/mansi.jpg" class="rounded-circle" width="150" height="150" alt="Mansi Raturi"> -->
+                        <h3>Mansi Raturi</h3>
+                        <p>MS in Data Science | Boston</p>
+                        <a href="about-mansi.html" class="btn btn-primary">View Journey</a>
+                    </div>
+                </div>
+                <!-- Profile 3 -->
+                <div class="carousel-item">
+                    <div class="text-center">
+                        <!-- <img src="images/rishin.jpg" class="rounded-circle" width="150" height="150" alt="Rishin Pandit"> -->
+                        <h3>Rishin Pandit</h3>
+                        <p>MS in AI | Canada</p>
+                        <a href="about-rishin.html" class="btn btn-primary">View Journey</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#profileCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#profileCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card p-3 text-center fade-in">
+                    <a href="https://unidecisiontracker.streamlit.app/" class="btn btn-primary">
+                        <h3>Expert Analysis</h3>
+                        <p>Analyzing your university admit.</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 text-center fade-in">
+                    <a href="gre-prep.html" class="btn btn-primary">
+                        <h3>GRE Prep Plan</h3>
+                        <p>Follow our structured 2-month study plan.</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 text-center fade-in">
+                    <a href="ielts-practice.html" class="btn btn-primary">
+                        <h3>IELTS Practice</h3>
+                        <p>High-quality IELTS tests and resources.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        &copy; 2025 AdmitPredict. All Rights Reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

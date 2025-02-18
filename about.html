@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Australia Study Abroad Process</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #1e1e2f, #3a3a6e);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .timeline {
+            position: relative;
+        }
+
+        .timeline-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s forwards;
+        }
+
+        .timeline-item:nth-child(odd) {
+            animation-delay: 0.2s;
+        }
+
+        .timeline-item:nth-child(even) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .timeline-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Australia Study Abroad Process</h1>
+        <p class="text-center">Step-by-step guide for applying to Australian universities.</p>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>English Proficiency Preparation</h3>
+                <p>Prepare for IELTS based on university requirements. Aim for a high score to improve admission chances. Book a test slot and take the exam. Results are usually available within 7-14 days.</p>
+            </div>
+
+
+            <div class="timeline-item">
+                <h3>Shortlist Universities & Courses</h3>
+                <p>Choose universities based on course curriculum, location, career prospects, and budget.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Collect Certifications & Documents</h3>
+                <p>Gather academic transcripts, test scores, SOP, LORs, and work experience certificates.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Start Applying to Universities</h3>
+                <p>Submit applications before deadlines. Australian universities respond within 1-2 weeks.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Wait for Admits & Make a Decision</h3>
+                <p>Compare admission offers, scholarships, and university rankings before finalizing.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Plan Education Funding</h3>
+                <p>Decide between self-funding or education loans. Australia requires strong financial proof.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Arrange Financial Documents</h3>
+                <p>Prepare financial proofs such as bank statements, loan sanction letters, and tax returns.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Visa Process</h3>
+                <p>Apply for a student visa with required documents, including financial proof, medical checkup, and academic records. Ensure sufficient funds for tuition, living expenses (AUD 29,710), and airfare.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3> You Are All Set!</h3>
+                <p>Once your visa is approved, book your flight, pack essentials, and get ready for your Australian education journey! 🇦🇺✈️</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        &copy; 2025 AdmitPredict. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
